@@ -1,9 +1,6 @@
 # 🎵 Nhóm 11 — Ứng dụng Nghe Nhạc Di Động
 
-Ứng dụng nghe nhạc trên thiết bị di động lấy cảm hứng từ **SoundCloud**, được phát triển bằng **Flutter**. Dự án tập trung vào trải nghiệm tương tác âm nhạc trực quan thông qua thanh sóng âm (waveform) và hệ thống bình luận theo mốc thời gian thực của bài hát.
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+Ứng dụng nghe nhạc trên thiết bị di động lấy cảm hứng từ **SoundCloud**, được phát triển bằng **Flutter**. Dự án tập trung vào trải nghiệm tương tác âm nhạc trực quan thông qua thanh sóng âm và hệ thống bình luận theo mốc thời gian thực của bài hát.
 
 ---
 
