@@ -1,4 +1,4 @@
-# 🎵 Sóng — Ứng dụng Nghe Nhạc Di Động
+# 🎵 Nhóm 11 — Ứng dụng Nghe Nhạc Di Động
 
 **Sóng** là ứng dụng nghe nhạc trên thiết bị di động lấy cảm hứng từ **SoundCloud**, được phát triển bằng **Flutter**. Dự án tập trung vào trải nghiệm tương tác âm nhạc trực quan thông qua thanh sóng âm (Waveform) và hệ thống bình luận theo mốc thời gian thực của bài hát (Timed Comments).
 
@@ -16,16 +16,6 @@
 | 1 | **Đỗ Trọng Thắng** | `24100316` | **Nhóm trưởng** · Kiến trúc dự án, trình phát nhạc (`just_audio`), Waveform & Timed Comments |
 | 2 | **Nguyễn Anh Tuấn** | `24100400` | Thiết kế UI/UX, Trang chủ (Feed), Trang nghệ sĩ & Bảng xếp hạng |
 | 3 | **Nguyễn Thế Tuấn** | `24100315` | Quản lý thư viện (Playlist, Yêu thích), Tìm kiếm, Đa ngôn ngữ & Giao diện Sáng/Tối |
-
----
-
-## 📸 Giao diện ứng dụng
-
-*(Thay thế đường dẫn ảnh thực tế của nhóm vào thư mục `screenshots/`)*
-
-| Trang chủ & Khám phá | Trình phát & Waveform | Bình luận theo thời điểm | Giao diện Tối (Dark Mode) |
-| :---: | :---: | :---: | :---: |
-| <img src="screenshots/home.png" width="200"/> | <img src="screenshots/player.png" width="200"/> | <img src="screenshots/comments.png" width="200"/> | <img src="screenshots/dark_mode.png" width="200"/> |
 
 ---
 
@@ -62,19 +52,29 @@
 - **Đồ họa trực quan:** Custom Canvas (`CustomPainter`) vẽ thanh sóng âm tương tác.
 
 ### Cấu trúc thư mục
-*(Điều chỉnh lại tên các thư mục con bên dưới nếu cấu trúc `lib/` của nhóm có khác biệt)*
 
 ```text
 2026_2027_1_1_LTTBDD_N02_Nhom_11/
 ├── assets/
-│   ├── audio/                  # Kho tệp âm thanh mẫu (.mp3)
-│   ├── images/                 # Ảnh bìa bài hát, avatar nghệ sĩ
-│   └── data/                   # Dữ liệu mẫu bài hát, nghệ sĩ & bình luận
+│   ├── audio/                  # Kho tệp âm thanh mẫu (.mp3)[cite: 2, 8]
+│   └── imgs/                   # Ảnh bìa bài hát, avatar nghệ sĩ[cite: 2, 8]
 ├── lib/
-│   ├── main.dart               # Điểm khởi chạy ứng dụng, cấu hình Theme & Locale
-│   ├── models/                 # Các lớp dữ liệu (Song, Artist, Playlist, Comment...)
-│   ├── services/               # Xử lý âm thanh (AudioService) & lưu trữ cục bộ
-│   ├── providers/              # Quản lý trạng thái (Player, Theme, Language, Library)
-│   ├── screens/                # Các màn hình chính (Home, Search, Library, Player, Ranking...)
-│   └── widgets/                # Thành phần dùng chung (Waveform, MiniPlayer, SongTile...)
-└── pubspec.yaml                # Khai báo thư viện và tài nguyên
+│   ├── main.dart               # Điểm khởi chạy ứng dụng[cite: 1]
+│   ├── models/                 # Các lớp dữ liệu (Song, Artist, Playlist, Comment...)[cite: 1, 2]
+│   ├── screens/                # Toàn bộ giao diện các màn hình[cite: 1]
+│   │   ├── main_screen.dart    # Điều hướng chính (BottomNavigationBar)[cite: 1]
+│   │   ├── home/               # Màn hình Trang chủ[cite: 1]
+│   │   ├── feed/               # Màn hình Bảng tin (Feed)[cite: 1]
+│   │   ├── genre/              # Duyệt nhạc theo thể loại[cite: 1]
+│   │   ├── artist/             # Chi tiết nghệ sĩ[cite: 1]
+│   │   ├── charts/             # Bảng xếp hạng[cite: 1]
+│   │   ├── player/             # Trình phát nhạc chi tiết & bình luận[cite: 1]
+│   │   ├── playlist/           # Quản lý danh sách phát[cite: 1]
+│   │   ├── library/            # Thư viện cá nhân[cite: 1]
+│   │   ├── search/             # Tìm kiếm & lịch sử tìm kiếm[cite: 1]
+│   │   ├── upload/             # Tải lên bài hát (giả lập)[cite: 1]
+│   │   └── settings/           # Cài đặt giao diện, ngôn ngữ & thông tin nhóm[cite: 1]
+│   ├── services/               # Xử lý âm thanh (AudioService) & dữ liệu (DataService)[cite: 1, 2]
+│   ├── theme/                  # Cấu hình giao diện Sáng / Tối (Light / Dark Mode)[cite: 1]
+│   └── widgets/                # Thành phần dùng chung (Waveform, SongTile...)[cite: 1]
+└── pubspec.yaml                # Khai báo thư viện và tài nguyên[cite: 2]
