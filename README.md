@@ -6,7 +6,7 @@
 
 ## 📋 Thông tin môn học & Nhóm thực hiện
 
-- **Môn học:** Lập trình cho thiết bị di động (`2026_2027_1_1_LTTBDD_N02_Nhom_11`)
+- **Môn học:** Lập trình cho thiết bị di động
 - **Lớp:** N02 — **Nhóm:** 11
 - **Giảng viên hướng dẫn:** Nguyễn Xuân Quế
 
