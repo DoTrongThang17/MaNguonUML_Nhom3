@@ -6,7 +6,8 @@
 
 ## 📋 Thông tin môn học & Nhóm thực hiện
 
-- **Môn học:** Lập trình cho thiết bị di động
+- **Trường:** Đại học Phenikaa
+- **Môn học:** Lập trình cho thiết bị di động (`2026_2027_1_1_LTTBDD_N02_Nhom_11`)
 - **Lớp:** N02 — **Nhóm:** 11
 - **Giảng viên hướng dẫn:** Nguyễn Xuân Quế
 
@@ -47,5 +48,34 @@
 - **Framework:** Flutter & Dart
 - **Xử lý âm thanh:** `just_audio`
 - **Lưu trữ cục bộ:** `shared_preferences` (lưu lịch sử tìm kiếm, cấu hình giao diện, ngôn ngữ)
+- **Đồ họa sóng âm:** Custom Canvas (`CustomPainter`)
 
 ---
+
+## 📂 Cấu trúc thư mục
+
+```text
+2026_2027_1_1_LTTBDD_N02_Nhom_11/
+├── assets/
+│   ├── audio/                  # Kho tệp âm thanh mẫu (.mp3)
+│   └── imgs/                   # Ảnh bìa bài hát, avatar nghệ sĩ
+├── lib/
+│   ├── main.dart               # Điểm khởi chạy ứng dụng
+│   ├── models/                 # Các lớp dữ liệu (Song, Artist, Playlist, Comment...)
+│   ├── screens/                # Toàn bộ giao diện các màn hình
+│   │   ├── main_screen.dart    # Điều hướng chính (BottomNavigationBar)
+│   │   ├── home/               # Màn hình Trang chủ
+│   │   ├── feed/               # Màn hình Bảng tin (Feed)
+│   │   ├── genre/              # Duyệt nhạc theo thể loại
+│   │   ├── artist/             # Chi tiết nghệ sĩ
+│   │   ├── charts/             # Bảng xếp hạng
+│   │   ├── player/             # Trình phát nhạc chi tiết & bình luận
+│   │   ├── playlist/           # Quản lý danh sách phát
+│   │   ├── library/            # Thư viện cá nhân
+│   │   ├── search/             # Tìm kiếm & lịch sử tìm kiếm
+│   │   ├── upload/             # Tải lên bài hát (giả lập)
+│   │   └── settings/           # Cài đặt giao diện, ngôn ngữ & thông tin nhóm
+│   ├── services/               # Xử lý âm thanh (AudioService) & dữ liệu (DataService)
+│   ├── theme/                  # Cấu hình giao diện Sáng / Tối (Light / Dark Mode)
+│   └── widgets/                # Thành phần dùng chung (Waveform, SongTile...)
+└── pubspec.yaml                # Khai báo thư viện và tài nguyên
