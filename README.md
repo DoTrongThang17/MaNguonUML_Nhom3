@@ -1,4 +1,4 @@
-# 🎵 Sóng — Ứng dụng Nghe Nhạc Di Động
+# 🎵 Nhóm 11 — Ứng dụng Nghe Nhạc Di Động
 
 Ứng dụng nghe nhạc trên thiết bị di động lấy cảm hứng từ **SoundCloud**, được phát triển bằng **Flutter**. Dự án tập trung vào trải nghiệm tương tác âm nhạc trực quan thông qua thanh sóng âm (waveform) và hệ thống bình luận theo mốc thời gian thực của bài hát.
 
@@ -18,16 +18,6 @@
 | **Nhóm trưởng** | Đỗ Trọng Thắng | `24100316` |
 | **Thành viên** | Nguyễn Anh Tuấn | `24100400` |
 | **Thành viên** | Nguyễn Thế Tuấn | `24100315` |
-
----
-
-## 📱 Giao diện ứng dụng
-
-*(Bạn có thể chụp ảnh màn hình lưu vào thư mục `assets/screenshots/` và cập nhật lại tên file bên dưới)*
-
-| Trang chủ & Feed | Trình phát nhạc & Waveform | Bình luận theo thời điểm | Bảng xếp hạng |
-| :---: | :---: | :---: | :---: |
-| <img src="assets/screenshots/home.png" width="200"/> | <img src="assets/screenshots/player.png" width="200"/> | <img src="assets/screenshots/comment.png" width="200"/> | <img src="assets/screenshots/chart.png" width="200"/> |
 
 ---
 
@@ -62,10 +52,3 @@
 - **Lưu trữ cục bộ:** `shared_preferences` (lưu lịch sử tìm kiếm, cấu hình giao diện, ngôn ngữ)
 
 ---
-
-## 📂 Cấu trúc thư mục tài nguyên (`assets/`)
-
-```text
-assets/
-├── audio/          # Chứa các file nhạc định dạng .mp3
-└── imgs/           # Chứa hình ảnh đại diện nghệ sĩ và ảnh bìa bài hát
